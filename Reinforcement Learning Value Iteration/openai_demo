@@ -1,0 +1,8 @@
+import gym
+# then we will select an environment from open ai
+env = gym.make('CartPole-v0')
+env.reset() # will reset all previous settings
+
+for episode in range(100):
+    env.render() # this will open openai window
+    env.step(1) # this type of environment will take only two actions i.e left or right
